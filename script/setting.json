@@ -1,0 +1,9 @@
+{
+  "model": {
+    "1st_conf" : "./dat/model/yukari_1st_w825_f0c1_250_cut430_mdio_ydio/config.json",
+    "1st_model" : "./dat/model/yukari_1st_w825_f0c1_250_cut430_mdio_ydio/predictor_165000.npz",
+    "2nd_conf" : "./dat/model/yukari_2nd_22050/config.json",
+    "2nd_model" : "./dat/model/yukari_2nd_22050/predictor_255000.npz"
+  },
+  "gpu": 0
+}

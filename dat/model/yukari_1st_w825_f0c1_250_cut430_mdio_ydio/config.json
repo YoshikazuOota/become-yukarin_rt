@@ -1,0 +1,57 @@
+{
+  "dataset": {
+    "features": [
+      "f0",
+      "mfcc"
+    ],
+    "input_glob": "dat/out_myVoice_22050/v_*.npy",
+    "input_global_noise": 0.01,
+    "input_local_noise": 0.01,
+    "input_mean_path": "dat/out_myVoice_22050/mean.npy",
+    "input_var_path": "dat/out_myVoice_22050/var.npy",
+    "num_test": 1,
+    "param": {
+      "acoustic_feature_param": {
+        "alpha": 0.466,
+        "f0_estimating_method": "harvest",
+        "frame_period": 5,
+        "order": 8
+      },
+      "voice_param": {
+        "pad_second": 0.0,
+        "sample_rate": 22050,
+        "top_db": null
+      }
+    },
+    "seed": 0,
+    "target_glob": "dat/out_yukariVoice_22050/v_*.npy",
+    "target_global_noise": 0.01,
+    "target_local_noise": 0.01,
+    "target_mean_path": "dat/out_yukariVoice_22050/mean.npy",
+    "target_var_path": "dat/out_yukariVoice_22050/var.npy",
+    "train_crop_size": 512
+  },
+  "loss": {
+    "adversarial": 1,
+    "mse": 100
+  },
+  "model": {
+    "discriminator_base_channels": 32,
+    "discriminator_extensive_layers": 5,
+    "generator_base_channels": 64,
+    "generator_extensive_layers": 8,
+    "in_channels": 10,
+    "out_channels": 10,
+    "weak_discriminator": false
+  },
+  "project": {
+    "name": "",
+    "tags": []
+  },
+  "train": {
+    "batchsize": 16,
+    "gpu": 0,
+    "log_iteration": 250,
+    "snapshot_iteration": 5000
+  }
+}
