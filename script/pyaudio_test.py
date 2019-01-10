@@ -21,4 +21,4 @@ stream.stop_stream()
 stream.close()
 p.terminate()
 
-print("Stop Stming")rea
+print("Stop Stming")
